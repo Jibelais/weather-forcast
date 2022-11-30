@@ -1,10 +1,10 @@
 import React from "react";
-
-const WeatherData = (props) =>{
+//you could probably use object destructing here 
+const WeatherData = ({conditions, time}) =>{
     return (
         <div>
-            <p><span>conditions:</span>{props.conditions}</p>
-            <p><span>time:</span> {props.time}</p>
+            <p><span>conditions:</span>{conditions}</p>
+            <p><span>time:</span> {time}</p>
         </div>
         
     )
